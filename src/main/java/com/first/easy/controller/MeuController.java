@@ -1,3 +1,5 @@
+package com.first.easy.controller;
+
 import org.springframework.web.bind.annotation.*;
 
 @RestController
