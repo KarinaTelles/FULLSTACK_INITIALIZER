@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end</title>
+</head>
+<body>
+<h1>Minha View Genérica</h1>
+<button id="botao">Chama o backend</button>
+<p id="resposta"></p>
+
+<script>
+    document.getElementById("botao").addEventListener("click", async () => {
+        try {
+            // Faz uma requisição GET para o back-end
+            const response = await fetch("http://localhost:8080/api/mensagem");
+            const data = await response.text();
+            document.getElementById("resposta").innerText = data;
+        } catch (error) {
+            console.error("Erro:", error);
+        }
+    });
+</script>
+</body>
+</html>
