@@ -14,4 +14,4 @@
 * Spring Boot: 3.4.2
 
 ### INFOS
-Chame o front: http://localhost:5500/src/main/java/com/first/easy/view/viewgenerica.html
+Chame o front com o Live Server: http://localhost:5500/src/main/java/com/first/easy/view/viewgenerica.html
